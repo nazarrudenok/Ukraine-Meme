@@ -33,7 +33,7 @@ def mcpetya(message):
 
 @bot.message_handler(commands = ["klichko"])
 def klichko(message):
-    mcpetya = open("klichko.mp4", "rb")
+    klichko = open("klichko.mp4", "rb")
     bot.send_video(message.chat.id, klichko)
 
 @bot.message_handler(commands = ["ostonovites"])
@@ -61,12 +61,12 @@ def cat2(message):
     cat2 = open("cat2.mp4", "rb")
     bot.send_video(message.chat.id, cat2)
 
-@bor.message_handler(commands = ['solovev_dolboeb'])
+@bot.message_handler(commands = ['solovev_dolboeb'])
 def solovev_dolboeb(message):
     solovev_dolboeb = open("solovev_dolboeb.mp4", "rb")
     bot.send_video(message.chat.id, solovev_dolboeb)
 
-@bor.message_handler(commands = ['gordon'])
+@bot.message_handler(commands = ['gordon'])
 def gordon(message):
     gordon = open("gordon.mp4", "rb")
     bot.send_video(message.chat.id, gordon)
