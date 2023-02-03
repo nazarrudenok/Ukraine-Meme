@@ -63,7 +63,7 @@ def cat2(message):
 
 @bot.message_handler(commands = ['solovev_dolboeb'])
 def solovev_dolboeb(message):
-    solovev_dolboeb = open("solovev_dolboeb.mp4", "rb")
+    solovev_dolboeb = open("solovev_dolboeb (1).mp4", "rb")
     bot.send_video(message.chat.id, solovev_dolboeb)
 
 @bot.message_handler(commands = ['gordon'])
